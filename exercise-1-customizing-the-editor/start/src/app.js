@@ -14,7 +14,7 @@ class App {
   async init() {
     // initialize signalR hub (websockets connection)
     let connection = new signalR.HubConnectionBuilder()
-      .withUrl(API_BASE)
+      .withUrl(API_BASE) 
       .build();
 
     // receives the "colorChanged" web socket event
